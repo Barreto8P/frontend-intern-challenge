@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^$ /builds/production/ [L]
+RewriteRule ^$ builds/production/ [L]
