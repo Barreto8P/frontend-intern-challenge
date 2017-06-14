@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5 {
+  font-family: Roboto Slab; }
+
+p {
+  font-family: Roboto; }
+
+.container {
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 25px; } }
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 65px; } }
+
+footer {
+  padding-bottom: 20px; }
+
+.link-field a {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  text-decoration: none !important; }
+
+@media screen and (max-width: 992px) {
+  .link-field {
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  .link-field {
+    float: none;
+    width: auto; } }
+
+@media screen and (max-width: 992px) {
+  .social-media-field {
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  .social-media-field {
+    float: none;
+    width: auto; } }

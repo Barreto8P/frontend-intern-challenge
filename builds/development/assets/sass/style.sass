@@ -1,0 +1,191 @@
+//VARIABLES
+
+$chaordic-color : #AA1423
+$support-color : #777
+$line-back-color : #EEE
+$color-white: #ffffff
+$dark-orange: #F28020
+
+$medium-device : 992px
+
+//BASE CONFIGURATION
+
+h1,h2,h3,h4,h5
+  font-family: Roboto Slab
+  color: $chaordic-color
+p
+  font-family: Roboto
+
+.container
+  text-align: center
+  @media screen and (max-width: $medium-device)
+    padding : 25px
+  @media screen and (min-width: $medium-device)
+    padding : 65px
+
+header
+  img
+    display: block
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+
+// SECTIONS CONFIGURATIONS
+
+//LINKS SHORTENER
+#links-shortener
+  color: white
+  background: url("../img/background-home.jpg") no-repeat center
+  background-size: cover
+  @media screen and (max-width: $medium-device)
+    padding: 15px
+
+  @media screen and (min-width: $medium-device)
+    padding: 60px
+    h1
+      font-size: 50px
+    p
+      font-size: 20px
+
+.form-field
+  input
+    padding: 10px 0
+    background: rgba(0, 0, 0, 0)
+    border: none
+    color: $dark-orange
+    border-bottom: 2px solid $dark-orange
+    outline: none
+    display: inline-block
+    margin: 10px
+    &::placeholder
+      color: $dark-orange
+  button[type="reset"]
+    color: white
+    border: 0
+    padding: 0 10px
+    outline: none
+    background-color: transparent
+    outline: none
+  @media screen and (max-width: $medium-device)
+    width: auto
+    display: block
+    margin: 10px 0
+    input[type="text"]
+      font-size: 15px
+      width: auto
+      display: inline-block
+    button[type="reset"]
+      width: auto
+      display: inline-block
+  @media screen and (min-width: $medium-device)
+    display: inline-block
+    width:  45%
+    margin-left: auto
+    margin-right: auto
+    input[type="text"]
+      font-size: 20px
+      width: 80%
+      display: inline-block
+    button[type="reset"]
+      width: auto
+      display: inline-block
+
+
+
+.btn
+  background-color: $dark-orange
+  font-family: Roboto
+  font-weight: bold
+  color: white
+  padding: 10px 20px
+  border: none
+  @media screen and (max-width: $medium-device)
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+//   TOP 5
+.classification-field
+  font-family: Roboto
+  font-size: 22px
+  margin-left: auto
+  margin-right: auto
+  @media screen and (max-width: $medium-device)
+    width: auto
+  @media screen and (min-width: $medium-device)
+    width: 50%
+  td
+    padding-top: 5px
+    padding-bottom: 5px
+    border-bottom: 0.2px solid transparentize($support-color, 0.6)
+
+  .link
+    padding-right: 30px
+    color: $chaordic-color
+    text-align: left
+    text-decoration: none
+  .hit-count
+    color: $support-color
+    text-align: right
+
+
+// HITS
+
+#hits
+  background-color: $line-back-color
+  font-family: Roboto Slab
+  .container
+    padding-top: 10px
+    padding-bottom: 20px
+  p
+    margin-top: 25px
+    color: $support-color
+
+.arrow-down
+  width: 0
+  height: 0
+  border-left: 50px solid transparent
+  border-right: 50px solid transparent
+  border-top: 50px solid #fff
+  margin-left: auto
+  margin-right: auto
+
+#total-hits
+  background-color: white
+  color: #AA1423
+  font-size: 30px
+  padding: 10px 20px
+  border-radius: 10px
+  border: 1px solid #cfcdcf
+
+
+
+
+//FOOTER
+footer
+  padding-bottom: 30px
+.link-field
+  a
+    color: $chaordic-color
+    font-family: Roboto
+    font-size: 24px
+    text-decoration: none !important
+  @media screen and (max-width: $medium-device)
+    display: block
+    float: none
+    width: auto
+  @media screen and (min-width: $medium-device)
+    display: inline-block
+    float: left
+    width: 50%
+
+
+.social-media-field
+  @media screen and (max-width: $medium-device)
+    display: block
+    float: none
+    width: auto
+  @media screen and (min-width: $medium-device)
+    display: inline-block
+    float: right
+    width: 50%

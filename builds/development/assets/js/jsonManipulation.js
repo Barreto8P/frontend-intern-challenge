@@ -1,6 +1,6 @@
   loadJSON("assets/js/urls.json", function(response) {
       var actual_JSON = JSON.parse(response);
-      displayTop5(actual_JSON,'classification-field');
+      displayTop5(actual_JSON,'classification');
       displayTotalHits(actual_JSON,'total-hits');
   });
 
@@ -23,7 +23,7 @@ function displayTop5(data,local) {
     var sorted_JSON = data.sort(function(a, b){return b.hits-a.hits}); //Sort JSON into descendent order
     var board = document.getElementById(local);
     for (var i = 0; i < 5; i++) {
-      var newItem = "<tr><td style='text-align:left;'><a class='chaordic-text' href='"+sorted_JSON[i].url+"'>"+sorted_JSON[i].shortUrl+"</a></td><td class='support-text'>"+formatNumber(sorted_JSON[i].hits)+"</td></tr>";
+      var newItem = "<tr><td style='text-align:left;'><a class='link' href='"+sorted_JSON[i].url+"'>"+sorted_JSON[i].shortUrl+"</a></td><td class='hit-count'>"+formatNumber(sorted_JSON[i].hits)+"</td></tr>";
       board.innerHTML+=newItem;
     }
 }

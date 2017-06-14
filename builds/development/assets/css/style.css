@@ -1,51 +1,51 @@
-h1,h2,h3,h4,h5{
+h1, h2, h3, h4, h5 {
   font-family: Roboto Slab;
-}
-p{
-  font-family: Roboto;
-}
-.chaordic-text{
-  color: #AA1423;
-}
-.support-text{
-  color: #777;
-}
-.container{
-  padding: 65px;
-  text-align: center;
-}
+  color: #AA1423; }
 
-/*Links Shortener*/
-#links-shortener{
-  color: white;
-  padding: 6rem;
-  background: url("../img/background-home.jpg") no-repeat center;
-  background-size: cover;
-}
-.form-field{
-  display: inline-block;
-  width:35%;
+p {
+  font-family: Roboto; }
+
+.container {
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 25px; } }
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 65px; } }
+
+header img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-}
-.form-field input{
-  width: auto;
-  padding: 10px 0;
-  background: rgba(0, 0, 0, 0);
-  border: none;
-  color: orange;
-  border-bottom: 2px solid orange;
-  outline: none;
-  display:inline-block;
-}
-.copy,.shortify{
-    transition: opacity 0.5s linear;
-}
+  padding: 20px; }
 
-.form-field input::placeholder{
-  color: orange;
-}
+#links-shortener {
+  color: white;
+  background: url("../img/background-home.jpg") no-repeat center;
+  background-size: cover; }
+  @media screen and (max-width: 992px) {
+    #links-shortener {
+      padding: 15px; } }
+  @media screen and (min-width: 992px) {
+    #links-shortener {
+      padding: 60px; }
+      #links-shortener h1 {
+        font-size: 50px; }
+      #links-shortener p {
+        font-size: 20px; } }
+
+.form-field input {
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  color: #F28020;
+  border-bottom: 2px solid #F28020;
+  outline: none;
+  display: inline-block;
+  margin: 10px; }
+  .form-field input::placeholder {
+    color: #F28020; }
 
 .form-field button[type="reset"] {
   color: white;
@@ -53,48 +53,81 @@ p{
   padding: 0 10px;
   outline: none;
   background-color: transparent;
-  outline: none;
-}
+  outline: none; }
 
-.btn{
-  background-color: orange;
+@media screen and (max-width: 992px) {
+  .form-field {
+    width: auto;
+    display: block;
+    margin: 10px 0; }
+    .form-field input[type="text"] {
+      font-size: 15px;
+      width: auto;
+      display: inline-block; }
+    .form-field button[type="reset"] {
+      width: auto;
+      display: inline-block; } }
+
+@media screen and (min-width: 992px) {
+  .form-field {
+    display: inline-block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto; }
+    .form-field input[type="text"] {
+      font-size: 20px;
+      width: 80%;
+      display: inline-block; }
+    .form-field button[type="reset"] {
+      width: auto;
+      display: inline-block; } }
+
+.btn {
+  background-color: #F28020;
   font-family: Roboto;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
   padding: 10px 20px;
-  border: none;
-}
+  border: none; }
+  @media screen and (max-width: 992px) {
+    .btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
 
-
-/*Top 5*/
-
-
-#classification-field{
+.classification-field {
   font-family: Roboto;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 22px;
   margin-left: auto;
-  margin-right: auto;
-  width: 40%
-}
+  margin-right: auto; }
+  @media screen and (max-width: 992px) {
+    .classification-field {
+      width: auto; } }
+  @media screen and (min-width: 992px) {
+    .classification-field {
+      width: 50%; } }
+  .classification-field td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 0.2px solid rgba(119, 119, 119, 0.4); }
+  .classification-field .link {
+    padding-right: 30px;
+    color: #AA1423;
+    text-align: left;
+    text-decoration: none; }
+  .classification-field .hit-count {
+    color: #777;
+    text-align: right; }
 
-#classification-field .chaordic-text{
-  text-align: left;
-  text-decoration: none;
-}
-#classification-field .support-text{
-  text-align: right;
-}
-
-/*HITS AREA*/
-
-#hits{
-  background-color: #eee;
-  font-family: Roboto Slab;
-}
-#hits .container{
-  padding-top: 10px;
-}
+#hits {
+  background-color: #EEE;
+  font-family: Roboto Slab; }
+  #hits .container {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  #hits p {
+    margin-top: 25px;
+    color: #777; }
 
 .arrow-down {
   width: 0;
@@ -103,100 +136,45 @@ p{
   border-right: 50px solid transparent;
   border-top: 50px solid #fff;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
-#total-hits{
+#total-hits {
   background-color: white;
   color: #AA1423;
-  font-size: 2rem;
+  font-size: 30px;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 1px solid #cfcdcf;
-}
+  border: 1px solid #cfcdcf; }
 
-footer{
-  padding-bottom: 20px;
-}
+footer {
+  padding-bottom: 30px; }
 
-.link-field{
-  float:left;
-  width: 50%;
-}
-.link-field >a{
+.link-field a {
+  color: #AA1423;
   font-family: Roboto;
-  font-size: 1.4rem;
-  text-decoration: none !important;
+  font-size: 24px;
+  text-decoration: none !important; }
 
-}
-
-.social-media-field{
-  float:right;
-  width: 50%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/*Media Querrie*/
-@media only screen and (max-width: 970px) {
-  .container{
-    padding: 25px;
-    text-align: center;
-  }
-  /*Links Shortener*/
-  #links-shortener{
-    color: white;
-    padding: 1.5rem;
-    background: url("../img/background-home.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .form-field{
-    width: auto;
+@media screen and (max-width: 992px) {
+  .link-field {
     display: block;
-    margin:10px 0;
-  }
-  .form-field input{
-    margin:10px;
-  }
-  .form-field input[type="text"]{
-    width: auto;
+    float: none;
+    width: auto; } }
+
+@media screen and (min-width: 992px) {
+  .link-field {
     display: inline-block;
-  }
+    float: left;
+    width: 50%; } }
 
-  .form-field button[type="reset"] {
-    width: auto;
+@media screen and (max-width: 992px) {
+  .social-media-field {
+    display: block;
+    float: none;
+    width: auto; } }
+
+@media screen and (min-width: 992px) {
+  .social-media-field {
     display: inline-block;
-  }
-
-  .btn{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*FOOTER*/
-
-  .link-field{
-    display:block;
-    width: 50%;
-  }
-  .link-field >a{
-    font-family: Roboto;
-    font-size: 1.4rem;
-    text-decoration: none !important;
-
-  }
-
-  .social-media-field{
-    display:block;
-  }
-}
+    float: right;
+    width: 50%; } }
